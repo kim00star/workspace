@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HPY-5g-wzh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zmC-Wb-lRj">
+            <objects>
+                <navigationController id="HPY-5g-wzh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s2K-6f-xV0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4Hi-Fp-FKt" kind="relationship" relationship="rootViewController" id="Onh-pK-LQp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0o5-Qu-jSo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-387" y="52"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="s15-eU-cFG">
+            <objects>
+                <viewController id="4Hi-Fp-FKt" customClass="ViewController" customModule="OXGameTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hWC-yV-iJc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KakaoTalk_Image_2022-06-17-00-10-8" translatesAutoresizingMaskIntoConstraints="NO" id="juC-AH-nqP">
+                                <rect key="frame" x="10" y="98" width="394" height="700"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klL-4S-Ke7">
+                                <rect key="frame" x="101.5" y="561" width="211" height="74"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="시작하기!">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Click_startBtn:" destination="4Hi-Fp-FKt" eventType="touchUpInside" id="DBz-Vo-5oV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OX 퀴즈" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hU6-Hp-ie0">
+                                <rect key="frame" x="82" y="138" width="250" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="EQ0-8z-vhN"/>
+                                    <constraint firstAttribute="width" constant="250" id="FGD-6M-K0H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Icu-En-cvt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hU6-Hp-ie0" firstAttribute="top" secondItem="Icu-En-cvt" secondAttribute="top" constant="50" id="9oG-QQ-kl5"/>
+                            <constraint firstItem="juC-AH-nqP" firstAttribute="top" secondItem="Icu-En-cvt" secondAttribute="top" constant="10" id="ACf-s7-E8x"/>
+                            <constraint firstItem="hU6-Hp-ie0" firstAttribute="centerX" secondItem="hWC-yV-iJc" secondAttribute="centerX" id="G0o-R5-bds"/>
+                            <constraint firstItem="klL-4S-Ke7" firstAttribute="centerY" secondItem="hWC-yV-iJc" secondAttribute="centerY" constant="150" id="GzO-Yv-2zq"/>
+                            <constraint firstItem="juC-AH-nqP" firstAttribute="centerX" secondItem="hWC-yV-iJc" secondAttribute="centerX" id="M6o-QQ-Elw"/>
+                            <constraint firstItem="juC-AH-nqP" firstAttribute="centerY" secondItem="hWC-yV-iJc" secondAttribute="centerY" id="W1h-9O-YbC"/>
+                            <constraint firstItem="klL-4S-Ke7" firstAttribute="centerX" secondItem="hWC-yV-iJc" secondAttribute="centerX" id="exM-ej-6cl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="j12-wy-YpY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozV-G7-an8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257.97101449275362" y="51.5625"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="o9r-C7-tWP">
+            <objects>
+                <viewController storyboardIdentifier="DetailController" id="r5B-2g-X70" customClass="DetailController" customModule="OXGameTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bJy-M5-gzf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="구라지" translatesAutoresizingMaskIntoConstraints="NO" id="Bbu-K4-lWD">
+                                <rect key="frame" x="-33" y="268" width="480" height="360"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RRu-KH-c3m"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bbu-K4-lWD" firstAttribute="centerY" secondItem="bJy-M5-gzf" secondAttribute="centerY" id="gNL-Zx-WTY"/>
+                            <constraint firstItem="Bbu-K4-lWD" firstAttribute="centerX" secondItem="bJy-M5-gzf" secondAttribute="centerX" id="zJA-k9-Ola"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1hW-09-AWm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910" y="52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="KakaoTalk_Image_2022-06-17-00-10-8" width="394" height="602"/>
+        <image name="구라지" width="480" height="360"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

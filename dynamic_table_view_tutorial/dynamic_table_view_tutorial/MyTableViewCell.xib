@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="177" id="Qg2-1a-3KZ" customClass="MyTableViewCell" customModule="dynamic_table_view_tutorial" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="177"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qg2-1a-3KZ" id="DpX-J8-yYs">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="177"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="라이언이미지" translatesAutoresizingMaskIntoConstraints="NO" id="3ZH-iQ-nIf">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="MEZ-54-Xmq"/>
+                            <constraint firstAttribute="height" constant="50" id="hEu-OI-EXg"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Sxm-hA-Kk2">
+                        <rect key="frame" x="66" y="8" width="107" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="빡대가리 김지원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INh-d9-7g6">
+                                <rect key="frame" x="0.0" y="0.0" width="107" height="25"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@개발자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2B-ca-7Hn">
+                                <rect key="frame" x="0.0" y="25" width="107" height="25"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWJ-xS-9nW">
+                        <rect key="frame" x="8" y="66" width="464" height="68"/>
+                        <string key="text">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ftR-gb-g63">
+                        <rect key="frame" x="8" y="142" width="70" height="20"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulD-AL-sdQ">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="TQd-bp-pve"/>
+                                    <constraint firstAttribute="height" constant="20" id="i3n-sS-28W"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system" title=""/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hg-CL-oAn">
+                                <rect key="frame" x="25" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="71G-zj-gJR"/>
+                                    <constraint firstAttribute="width" constant="20" id="tp6-x0-kql"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="hand.thumbsup.fill" catalog="system" title=""/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0d-NM-ess">
+                                <rect key="frame" x="50" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2gQ-9N-ZDs"/>
+                                    <constraint firstAttribute="width" constant="20" id="5ZR-yE-lQq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.forward.fill" catalog="system" title=""/>
+                            </button>
+                        </subviews>
+                        <color key="tintColor" systemColor="systemGrayColor"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vWJ-xS-9nW" firstAttribute="leading" secondItem="3ZH-iQ-nIf" secondAttribute="leading" id="5Mi-zu-S7q"/>
+                    <constraint firstItem="3ZH-iQ-nIf" firstAttribute="leading" secondItem="DpX-J8-yYs" secondAttribute="leading" constant="8" id="Fgj-m8-vyk"/>
+                    <constraint firstItem="ftR-gb-g63" firstAttribute="leading" secondItem="vWJ-xS-9nW" secondAttribute="leading" id="Of7-UJ-f8e"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vWJ-xS-9nW" secondAttribute="trailing" constant="8" id="QWh-Tw-5Bi"/>
+                    <constraint firstItem="ftR-gb-g63" firstAttribute="top" secondItem="vWJ-xS-9nW" secondAttribute="bottom" constant="8" id="T1i-3B-XAa"/>
+                    <constraint firstAttribute="bottom" secondItem="ftR-gb-g63" secondAttribute="bottom" constant="15" id="U89-mz-ybz"/>
+                    <constraint firstItem="Sxm-hA-Kk2" firstAttribute="top" secondItem="3ZH-iQ-nIf" secondAttribute="top" id="VIh-rc-SHh"/>
+                    <constraint firstItem="Sxm-hA-Kk2" firstAttribute="leading" secondItem="3ZH-iQ-nIf" secondAttribute="trailing" constant="8" id="XQ6-uS-OBi"/>
+                    <constraint firstItem="Sxm-hA-Kk2" firstAttribute="height" secondItem="3ZH-iQ-nIf" secondAttribute="height" id="ghy-Ea-7Dd"/>
+                    <constraint firstItem="vWJ-xS-9nW" firstAttribute="top" secondItem="3ZH-iQ-nIf" secondAttribute="bottom" constant="8" id="r5n-4w-ONb"/>
+                    <constraint firstItem="3ZH-iQ-nIf" firstAttribute="top" secondItem="DpX-J8-yYs" secondAttribute="top" constant="8" id="zFl-3L-asq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="userContentLabel" destination="vWJ-xS-9nW" id="9wA-To-ACq"/>
+                <outlet property="userProfileImage" destination="3ZH-iQ-nIf" id="j9p-TE-Iej"/>
+            </connections>
+            <point key="canvasLocation" x="159" y="89"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowshape.turn.up.forward.fill" catalog="system" width="128" height="106"/>
+        <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="라이언이미지" width="259" height="194"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
